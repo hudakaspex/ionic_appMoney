@@ -1,0 +1,14 @@
+page-register {
+    ion-input.input{
+        color:#848a90;
+    }
+    ion-icon.icon{
+        font-size: 25px;
+    }
+
+    .errMessage{
+       padding-left:17px; 
+       color:rgb(218, 45, 45);
+       font-size:12px;
+    }
+}

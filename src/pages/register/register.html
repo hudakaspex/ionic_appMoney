@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Sign up</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <div [formGroup]="form" *ngFor="let i of labels">
+      <ion-item>
+        <ion-label floating>{{i.label}}</ion-label>
+        <ion-input [type]="i.type" [formControlName]="i.controlName"></ion-input>
+      </ion-item>
+      <div class="errMessage">
+        <span *ngIf="form.get(i.controlName).hasError('required') && (form.controls[i.controlName].touched || form.controls[i.controlName].dirty)">*{{i.errMessage}}</span>
+        <span *ngIf="form.get(i.controlName).hasError('email') && !form.get(i.controlName).hasError('required') && (form.controls[i.controlName].touched || form.controls[i.controlName].dirty)">*Enter a valid email</span>
+      </div>
+    </div>
+      <ion-grid style="padding-top:20px;">
+        <ion-row>
+          <ion-col col-12>
+            <button ion-button block round outline (click)="signup(form)" [disabled]="form.invalid">Register</button>
+          </ion-col> 
+        </ion-row>
+      </ion-grid>
+  </ion-list>
+  
+</ion-content>

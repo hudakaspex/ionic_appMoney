@@ -1,0 +1,30 @@
+<ion-content padding class="background">
+  <ion-card>
+    <ion-card-header>
+      Login
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-lines>
+        <ion-item>
+          <ion-input placeholder="Username" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Password" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <p style="color:rgb(154, 158, 161);">Forgot password ? <a>Get password</a></p>
+        </ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-12>
+              <button ion-button block outline color="grown" round>Sign in</button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+    <div style="color:rgb(125, 131, 138);font-size:16px;">
+      <p>Create your account ? <a (click)="signup()">Sign up</a></p>  
+    </div>
+</ion-content>
