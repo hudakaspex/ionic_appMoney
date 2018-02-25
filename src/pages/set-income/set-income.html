@@ -1,0 +1,19 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Set Income</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label inline>Rp.</ion-label>>
+      <ion-input type="tel" placeholder="Enter income" maxlength="10" [(ngModel)]="income"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block outline round (click)="rootHome()">ADD</button>
+</ion-content>

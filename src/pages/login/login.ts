@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
+import { SetIncomePage } from '../set-income/set-income';
 
 @Component({
   selector: 'page-login',
@@ -15,6 +16,9 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
+  setIncome(){
+    this.navCtrl.setRoot(SetIncomePage)
+  }
   signup(){
     this.navCtrl.push(RegisterPage)
   }

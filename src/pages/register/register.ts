@@ -26,6 +26,7 @@ export class RegisterPage {
     })
   }
 
+
   signup(form){
     console.log(form)
   }

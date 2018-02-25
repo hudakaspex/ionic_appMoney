@@ -1,3 +1,43 @@
 page-home {
+  .doughnutChart{
+      display: line;
+      padding: 0%;
+  }
+
+  canvas{
+      width: 50px;
+      height: 50px;
+  }
+
+    #col-left{
+        border-top:0.1px solid rgb(156, 154, 154);
+        border-right:0.1px solid rgb(156, 154, 154);
+        border-bottom:0.1px solid rgb(156, 154, 154);
+        margin-top: 20px;
+    }
+
+    #col-right{
+        border-top:0.1px solid rgb(156, 154, 154);
+        border-bottom:0.1px solid rgb(156, 154, 154);
+        margin-top: 20px;
+    }
+
+    #col-right > p{
+        font-size: 18px;
+        text-align: center;
+        color: rgb(158, 158, 160);
+    }
+
+    #col-left > p{
+        font-size: 18px;
+        text-align: center;
+        color: rgb(158, 158, 160);
+    }
+
+    sup{
+        font-size: 11px;
+        font-family: fantasy;
+        color: rgb(85, 84, 84);
+    }
 
 }
